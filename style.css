@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     padding: 2rem 1rem 2rem 0;
     text-align: center;
@@ -22,9 +22,11 @@ header {
 }
 
 main {
+    margin-top: 8rem;
     height: calc(100vh - 2rem);
     overflow: auto;
     scroll-behavior: smooth;
+    /*margin-top: 15rem;*/
 }
 
 section article {
@@ -34,7 +36,7 @@ section article {
     border-width: 1px 1px 0 1px;
     border-style: solid;
     border-color: black;
-    min-height: 40%;
+    min-height: 60vh;
     align-items: center;
     box-sizing: border-box;
 }
@@ -42,34 +44,12 @@ section article {
 section article div {
     max-width: 35rem;
     padding: 0 2rem;
+    /*overflow-y: scroll;*/
 }
 
 article:last-of-type {
     border-bottom: none;
     margin-bottom: 4rem;
-}
-
-/*article h2 {*/
-/*    max-width: 35rem;*/
-/*}*/
-
-/*article p {*/
-/*    max-width: 35rem;*/
-/*}*/
-
-aside {
-    flex: 2;
-    border-width: 1px 1px 1px 0;
-    border-style: solid;
-    border-color: black;
-    height: calc(100vh - 2rem);
-    overflow: auto;
-    box-sizing: border-box;
-}
-
-aside article {
-    border-bottom: 1px solid black;
-    padding: 1rem;
 }
 
 nav {
@@ -105,22 +85,6 @@ footer .content {
     border-top: 1px solid black;
 }
 
-.ppl {
-    background-image: url("img/ppl.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 644px;
-    background-position: left;
-}
-
-.noir {
-    background-image: url("img/city.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 644px;
-    background-position: center;
-}
-
 .text-white {
     color: white;
 }
@@ -134,18 +98,3 @@ h2 {
 p {
     line-height: 1.5rem;
 }
-
-
-/*@media screen {*/
-/*    @media (min-width: 1px) {*/
-/*        @media (min-height: 1px) {*/
-/*            @media (max-width: 9999px) {*/
-/*                @media (max-height: 9999px) {*/
-/*                    body {*/
-/*                        background: red;*/
-/*                    }*/
-/*                }*/
-/*            }*/
-/*        }*/
-/*    }*/
-/*}*/
