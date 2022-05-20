@@ -98,3 +98,31 @@ h2 {
 p {
     line-height: 1.5rem;
 }
+
+.yellow {
+    background-color: #e9f947;
+}
+
+.pink {
+    background-color: #f48d98;
+}
+
+.green {
+    background-color: #5cf74d;
+}
+
+.blue {
+    background-color: #422cf0;
+}
+
+.orange {
+    background-color: #dc5322;
+}
+
+.yellow-02 {
+    background-color: #fcd85e;
+}
+
+.purple {
+    background-color: #403189;
+}
