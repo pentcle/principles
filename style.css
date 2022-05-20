@@ -6,50 +6,37 @@ body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     font-size: .9rem;
-    /*display: flex;*/
-    /*flex-flow: row wrap;*/
     box-sizing: border-box;
 }
 
 header {
     position: absolute;
     top: 0;
-    /*margin: 0;*/
-    padding: 0 0 1rem 0;
+    padding: 2rem 1rem 2rem 0;
     text-align: center;
     background-color: white;
-    width: 100%;
+    width: calc(100% - 2rem);
     z-index: 1;
     border-bottom: 1px solid black;
+    box-sizing: border-box;
 }
 
 main {
-    /*flex: 5;*/
-    border-width: 1px 0 0 1px;
-    border-style: solid;
-    border-color: black;
     height: calc(100vh - 2rem);
     overflow: auto;
     scroll-behavior: smooth;
-}
-
-section {
-    border-right: 1px solid black;
 }
 
 section article {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: black;
     min-height: 40%;
     align-items: center;
     box-sizing: border-box;
-    position: relative;
-}
-
-section article.small {
-    min-height: 10rem;
 }
 
 section article div {
@@ -105,16 +92,16 @@ footer {
     position: fixed;
     bottom: calc(1rem - 1px);
     width: calc(100% - 2rem);
-
+    background-color: white;
 }
 
 footer .content {
     box-sizing: border-box;
     position: relative;
     padding: 1.5rem 1rem;
-    background-color: white;
+
     width: calc(100% - 2px);
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
     border-top: 1px solid black;
 }
 
